@@ -2,7 +2,7 @@ Randomizer for Cliffhanger Redux
 A few changes were made to the rom for this randomizer to function (better)
 1. Planet awakens in the usual 'pit' room, which wakes up after morph is collected.
 -  This way the game seems to function as the original, with the pit room asleep on the first visit and awake after Morph.
--  Furthermore, morph will always be at the usual location or the Construction Zone adjacent to it (speed locked).
+-  Furthermore, morph will always be at the usual location.
 2. Some Wrecked Ship rooms were switched to an alternate state to allow reverse traversal of the Wrecked Ship and keep all items potentially on the table.
 -  A portion of this is a 1-screen X-Ray climb up the bowling room, which is in-logic.
 -  Also, the "basement" outside phantoon's room is reconnected with the room above. With Ice and X-Ray, you can clip with an Atomix into the room above (which is now a functioning door transition into the "asleep"
