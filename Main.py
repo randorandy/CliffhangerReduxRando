@@ -126,7 +126,7 @@ def assumed_fill(game: Game) -> tuple[bool]:
             # but dropping from spaceport can mess that up,
             # so it needs to be checked again.
             #completable, _, _ = solve(game)
-            completable = ((game.all_locations["Morph Ball"]["item"] == Items.Morph) or (game.all_locations["Construction Zone Missile"]["item"] == Items.Morph))
+            completable = game.all_locations["Morph Ball"]["item"] == Items.Morph
             #completable = True
             if completable:
                 print("Item placements successful.")
