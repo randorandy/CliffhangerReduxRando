@@ -1006,8 +1006,14 @@ location_logic: LocationLogicType = {
                 (HiJump in loadout) or
                 (SpaceJump in loadout) or
                 (GravitySuit in loadout) #get up the gray warehouse
+                ) and
+            (
+                (HiJump in loadout) or
+                (GravitySuit in loadout) or
+                (SpeedBooster in loadout) or
+                (Ice in loadout) #get up fish tank wall
                 )
-            )
+            ) 
     ),
     "WS Kaizo Pillar Missile": lambda loadout: (
         (wsBack in loadout)
