@@ -162,6 +162,14 @@ def write_rom(game: Game, romWriter: Optional[RomWriter] = None) -> str:
     romWriter.writeBytes(0x7ca5d, b"\x12\xe6\x00")
     # WS big room Patch -make it not wake up
     romWriter.writeBytes(0x7cb04, b"\x08")
+    # WS front gray door always opens
+    romWriter.writeBytes(0x787db, b"\x26")
+    # Zigzag opens without grapple
+    romWriter.writeBytes(0x7881f, b"\x36")
+    # Robots above juggler are always awake (for backdoor WS)
+    romWriter.writeBytes(0x144b77, b"\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea")
+    # And robots need to respond to shots (for backdoor WS)
+    romWriter.writeBytes(0x145196, b"\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea")
     
     # Morph Ball Fix
     romWriter.writeBytes(0x268ce, b"\x04")
